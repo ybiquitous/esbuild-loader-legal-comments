@@ -8,6 +8,7 @@
     "webpack-cli": "4.10.0"
   },
   "scripts": {
-    "build": "webpack build --mode=production"
+    "build": "webpack build --mode=production",
+    "esbuild-with-linked": "esbuild index.js --minify --bundle --legal-comments=linked --outdir=dist"
   }
 }
