@@ -10,6 +10,8 @@
   },
   "scripts": {
     "build": "webpack build --mode=production",
-    "esbuild-with-linked": "esbuild index.js --minify --bundle --legal-comments=linked --outdir=dist"
+    "esbuild": "esbuild index.js --minify --bundle --sourcemap",
+    "esbuild:linked": "npm run esbuild -- --legal-comments=linked --outfile=dist/linked.js",
+    "esbuild:eof": "npm run esbuild -- --legal-comments=eof --outfile=dist/eof.js"
   }
 }
