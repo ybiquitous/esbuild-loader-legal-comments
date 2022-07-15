@@ -10,9 +10,10 @@
     "webpack-cli": "4.10.0"
   },
   "scripts": {
-    "build": "webpack build --mode=production",
+    "build": "npm run webpack && npm run esbuild:eof && npm run esbuild:linked",
+    "webpack": "webpack build",
     "esbuild": "esbuild index.js --minify --bundle --sourcemap",
-    "esbuild:linked": "npm run esbuild -- --legal-comments=linked --outfile=dist/linked.js",
-    "esbuild:eof": "npm run esbuild -- --legal-comments=eof --outfile=dist/eof.js"
+    "esbuild:eof": "npm run esbuild -- --legal-comments=eof --outfile=dist/esbuild-eof.js",
+    "esbuild:linked": "npm run esbuild -- --legal-comments=linked --outfile=dist/esbuild-linked.js"
   }
 }

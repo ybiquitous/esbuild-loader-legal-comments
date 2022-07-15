@@ -4,13 +4,18 @@ const { ESBuildMinifyPlugin } = require("esbuild-loader");
 const output = {
   path: path.resolve(__dirname, "dist"),
 };
+const mode = "production";
+const devtool = "source-map";
 
+/** @type {import("webpack").Configuration} */
 module.exports = [
   {
     entry: {
-      default: "./index.js",
+      "webpack-default": "./index.js",
     },
     output,
+    mode,
+    devtool,
     optimization: {
       minimize: true,
       minimizer: ["..."],
@@ -18,9 +23,11 @@ module.exports = [
   },
   {
     entry: {
-      eof: "./index.js",
+      "webpack-eof": "./index.js",
     },
     output,
+    mode,
+    devtool,
     optimization: {
       minimize: true,
       minimizer: [
@@ -32,9 +39,11 @@ module.exports = [
   },
   {
     entry: {
-      linked: "./index.js",
+      "webpack-linked": "./index.js",
     },
     output,
+    mode,
+    devtool,
     optimization: {
       minimize: true,
       minimizer: [

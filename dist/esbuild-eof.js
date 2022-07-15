@@ -1,0 +1,12 @@
+(()=>{var h=Object.create;var c=Object.defineProperty;var v=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var l=(r,n)=>()=>(n||r((n={exports:{}}).exports,n),n.exports);var P=(r,n,t,s)=>{if(n&&typeof n=="object"||typeof n=="function")for(let e of y(n))!w.call(r,e)&&e!==t&&c(r,e,{get:()=>n[e],enumerable:!(s=v(n,e))||s.enumerable});return r};var u=(r,n,t)=>(t=r!=null?h(g(r)):{},P(n||!r||!r.__esModule?c(t,"default",{value:r,enumerable:!0}):t,r));var p=l((C,i)=>{(function(){"use strict";var r={}.hasOwnProperty;function n(){for(var t=[],s=0;s<arguments.length;s++){var e=arguments[s];if(!!e){var o=typeof e;if(o==="string"||o==="number")t.push(e);else if(Array.isArray(e)){if(e.length){var a=n.apply(null,e);a&&t.push(a)}}else if(o==="object")if(e.toString===Object.prototype.toString)for(var f in e)r.call(e,f)&&e[f]&&t.push(f);else t.push(e.toString())}}return t.join(" ")}typeof i<"u"&&i.exports?(n.default=n,i.exports=n):typeof define=="function"&&typeof define.amd=="object"&&define.amd?define("classnames",[],function(){return n}):window.classNames=n})()});var j=l((I,m)=>{"use strict";var b=Object.getOwnPropertySymbols,S=Object.prototype.hasOwnProperty,N=Object.prototype.propertyIsEnumerable;function E(r){if(r==null)throw new TypeError("Object.assign cannot be called with null or undefined");return Object(r)}function x(){try{if(!Object.assign)return!1;var r=new String("abc");if(r[5]="de",Object.getOwnPropertyNames(r)[0]==="5")return!1;for(var n={},t=0;t<10;t++)n["_"+String.fromCharCode(t)]=t;var s=Object.getOwnPropertyNames(n).map(function(o){return n[o]});if(s.join("")!=="0123456789")return!1;var e={};return"abcdefghijklmnopqrst".split("").forEach(function(o){e[o]=o}),Object.keys(Object.assign({},e)).join("")==="abcdefghijklmnopqrst"}catch{return!1}}m.exports=x()?Object.assign:function(r,n){for(var t,s=E(r),e,o=1;o<arguments.length;o++){t=Object(arguments[o]);for(var a in t)S.call(t,a)&&(s[a]=t[a]);if(b){e=b(t);for(var f=0;f<e.length;f++)N.call(t,e[f])&&(s[e[f]]=t[e[f]])}}return s}});var O=u(p()),d=u(j());function A(r){return(0,O.default)(r)}console.log(A());console.log((0,d.default)({foo:0},{bar:1}));})();
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+/*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+//# sourceMappingURL=esbuild-eof.js.map
